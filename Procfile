@@ -1,1 +1,1 @@
-web: python flaskb.py --logfile=-
+web: gunicorn -w 4 flaskb:app
