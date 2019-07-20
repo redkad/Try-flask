@@ -16,6 +16,10 @@ def about():
 def main():
     return render_template("main.html")
 
+@app.route("/main")
+def main():
+    return render_template("./assets")
+
 
 @app.route("/login")
 def login():
